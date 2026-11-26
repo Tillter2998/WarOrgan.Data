@@ -1639,6 +1639,16 @@
                     "Replaces": ["hellglaive"],
                     "Options": [
                       {
+                        "Items": [
+                          "power weapon",
+                          "splinter pistol",
+                          "hellglaive"
+                        ]
+                      },
+                      {
+                        "Items": ["stunclaw", "splinter pistol", "hellglaive"]
+                      },
+                      {
                         "Items": ["power weapon", "splinter pistol"]
                       },
                       {
@@ -1983,6 +1993,24 @@
                         "Items": ["klaive"]
                       }
                     ]
+                  },
+                  {
+                    "Max": 1,
+                    "PerXModels": 5,
+                    "Options": [
+                      {
+                        "Items": ["incubi shrine token"]
+                      }
+                    ]
+                  },
+                  {
+                    "Max": 1,
+                    "PerXModels": 5,
+                    "Options": [
+                      {
+                        "Items": ["incubi shrine token"]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2004,7 +2032,14 @@
             ]
           }
         ],
-        "WargearDefinitions": []
+        "WargearDefinitions": [
+          {
+            "Key": "incubi shrine token",
+            "DisplayName": "Incubi Shrine Token",
+            "Cost": 0,
+            "GrantsAbilities": []
+          }
+        ]
       },
       "UnitAbilities": [
         {
@@ -2298,21 +2333,6 @@
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 0,
-              "Max": 1
-            },
-            "ModelName": "Kabalite Warrior with Shredder",
-            "StatlineRef": "Kabalite Warriors",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["shredder", "close combat weapon"],
-                "Options": []
               }
             ]
           },
@@ -3565,8 +3585,31 @@
             "Keywords": [],
             "Wargear": [
               {
-                "InitialWargear": ["bladevanes", "dark lance"],
+                "InitialWargear": [
+                  "bladevanes",
+                  "dark lance",
+                  "dark lance",
+                  "dark lance"
+                ],
                 "Options": [
+                  {
+                    "Max": 3,
+                    "Replaces": ["dark lance"],
+                    "Options": [
+                      {
+                        "Items": ["disintegrator cannon"]
+                      }
+                    ]
+                  },
+                  {
+                    "Max": 3,
+                    "Replaces": ["dark lance"],
+                    "Options": [
+                      {
+                        "Items": ["disintegrator cannon"]
+                      }
+                    ]
+                  },
                   {
                     "Max": 3,
                     "Replaces": ["dark lance"],
@@ -3581,7 +3624,12 @@
             ]
           }
         ],
-        "WargearDefinitions": []
+        "WargearDefinitions": [
+          {
+            "Key": "dark lance",
+            "Cost": 5
+          }
+        ]
       },
       "UnitAbilities": [
         {
@@ -4186,6 +4234,7 @@
                 "Options": [
                   {
                     "Max": 1,
+                    "PerXModels": 3,
                     "Replaces": ["splinter rifle"],
                     "Options": [
                       {
@@ -4198,6 +4247,7 @@
                   },
                   {
                     "Max": 1,
+                    "PerXModels": 3,
                     "Options": [
                       {
                         "Items": ["cluster caltrops"]
@@ -4228,7 +4278,8 @@
                 ],
                 "Options": [
                   {
-                    "Max": 5,
+                    "Max": 1,
+                    "PerXModels": 3,
                     "Options": [
                       {
                         "Items": ["cluster caltrops"]
@@ -4237,62 +4288,17 @@
                         "Items": ["grav talon"]
                       }
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 0,
-              "Max": 5
-            },
-            "ModelName": "Reaver with Blaster",
-            "StatlineRef": "Reavers",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["splinter pistol", "bladevanes", "blaster"],
-                "Options": [
+                  },
                   {
-                    "Max": 5,
+                    "Max": 1,
+                    "PerXModels": 3,
+                    "Replaces": ["splinter rifle"],
                     "Options": [
                       {
-                        "Items": ["cluster caltrops"]
+                        "Items": ["blaster"]
                       },
                       {
-                        "Items": ["grav talon"]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 0,
-              "Max": 5
-            },
-            "ModelName": "Reaver with Heat Lance",
-            "StatlineRef": "Reavers",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": [
-                  "splinter pistol",
-                  "bladevanes",
-                  "heat lance"
-                ],
-                "Options": [
-                  {
-                    "Max": 5,
-                    "Options": [
-                      {
-                        "Items": ["cluster caltrops"]
-                      },
-                      {
-                        "Items": ["grav talon"]
+                        "Items": ["heat lance"]
                       }
                     ]
                   }
@@ -4620,18 +4626,6 @@
                     "Replaces": ["shardcarbine"],
                     "Options": [
                       {
-                        "Items": ["1 blast pistol and 1 power weapon"]
-                      },
-                      {
-                        "Items": ["1 splinter pistol and 1 power weapon"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 1,
-                    "Replaces": ["shardcarbine"],
-                    "Options": [
-                      {
                         "Items": ["blast pistol"]
                       },
                       {
@@ -4682,27 +4676,12 @@
                       },
                       {
                         "Items": ["haywire blaster"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 4,
-                    "Replaces": ["splinter cannon"],
-                    "Options": [
+                      },
                       {
                         "Items": ["blast pistol"]
                       },
                       {
                         "Items": ["splinter pistol"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 4,
-                    "Replaces": ["close combat weapon"],
-                    "Options": [
-                      {
-                        "Items": ["power weapon"]
                       }
                     ]
                   }
@@ -4712,16 +4691,6 @@
           }
         ],
         "WargearDefinitions": [
-          {
-            "Key": "1 blast pistol and 1 power weapon",
-            "DisplayName": "1 Blast pistol and 1 Power weapon",
-            "Cost": 0
-          },
-          {
-            "Key": "1 splinter pistol and 1 power weapon",
-            "DisplayName": "1 Splinter pistol and 1 Power weapon",
-            "Cost": 0
-          },
           {
             "Key": "dark lance",
             "Cost": 5
@@ -5200,73 +5169,18 @@
             "Keywords": [],
             "Wargear": [
               {
-                "InitialWargear": ["close combat weapon"],
-                "Options": [
-                  {
-                    "Max": 1,
-                    "Options": [
-                      {
-                        "Items": ["shardcarbine"]
-                      },
-                      {
-                        "Items": ["1 blast pistol and 1 power weapon"]
-                      },
-                      {
-                        "Items": ["1 splinter pistol and 1 power weapon"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 1,
-                    "Replaces": ["close combat weapon"],
-                    "Options": [
-                      {
-                        "Items": ["power weapon"]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 4,
-              "Max": 4
-            },
-            "ModelName": "Scourge with Special Weapon",
-            "StatlineRef": "Scourges",
-            "Keywords": [],
-            "Wargear": [
-              {
                 "InitialWargear": ["close combat weapon", "shardcarbine"],
                 "Options": [
                   {
-                    "Max": 4,
+                    "Max": 1,
                     "Replaces": ["shardcarbine"],
                     "Options": [
-                      {
-                        "Items": ["blaster"]
-                      },
-                      {
-                        "Items": ["shredder"]
-                      }
+                      { "Items": ["blast pistol"] },
+                      { "Items": ["splinter pistol"] }
                     ]
                   },
                   {
-                    "Max": 4,
-                    "Replaces": ["shardcarbine"],
-                    "Options": [
-                      {
-                        "Items": ["blast pistol"]
-                      },
-                      {
-                        "Items": ["splinter pistol"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 4,
+                    "Max": 1,
                     "Replaces": ["close combat weapon"],
                     "Options": [
                       {
@@ -5291,24 +5205,11 @@
                 "InitialWargear": ["shardcarbine", "close combat weapon"],
                 "Options": [
                   {
-                    "Max": 4,
+                    "Max": 1,
                     "Replaces": ["shardcarbine"],
                     "Options": [
-                      {
-                        "Items": ["blast pistol"]
-                      },
-                      {
-                        "Items": ["splinter pistol"]
-                      }
-                    ]
-                  },
-                  {
-                    "Max": 4,
-                    "Replaces": ["close combat weapon"],
-                    "Options": [
-                      {
-                        "Items": ["power weapon"]
-                      }
+                      { "Items": ["blaster"] },
+                      { "Items": ["shredder"] }
                     ]
                   }
                 ]
@@ -5316,18 +5217,7 @@
             ]
           }
         ],
-        "WargearDefinitions": [
-          {
-            "Key": "1 blast pistol and 1 power weapon",
-            "DisplayName": "1 Blast pistol and 1 Power weapon",
-            "Cost": 0
-          },
-          {
-            "Key": "1 splinter pistol and 1 power weapon",
-            "DisplayName": "1 Splinter pistol and 1 Power weapon",
-            "Cost": 0
-          }
-        ]
+        "WargearDefinitions": []
       },
       "UnitAbilities": [
         {
@@ -5822,12 +5712,6 @@
                       },
                       {
                         "Items": ["twin liquifier gun"]
-                      },
-                      {
-                        "Items": ["chain-flails"]
-                      },
-                      {
-                        "Items": ["talos gauntlet"]
                       }
                     ]
                   },
@@ -5835,12 +5719,6 @@
                     "Max": 1,
                     "Replaces": ["macro-scalpel"],
                     "Options": [
-                      {
-                        "Items": ["talos ichor injector"]
-                      },
-                      {
-                        "Items": ["twin liquifier gun"]
-                      },
                       {
                         "Items": ["chain-flails"]
                       },
@@ -6854,16 +6732,29 @@
                 "Options": [
                   {
                     "Max": 1,
+                    "PerXModels": 5,
                     "Replaces": ["twin torturer's tools"],
                     "Options": [
                       {
-                        "Items": ["alternative weapon options"]
+                        "Items": ["hexrifle", "torturer's tool"]
+                      },
+                      {
+                        "Items": ["liquifier gun", "torturer's tool"]
+                      },
+                      {
+                        "Items": ["ossefactor", "torturer's tool"]
+                      },
+                      {
+                        "Items": ["stinger pistol", "torturer's tool"]
+                      },
+                      {
+                        "Items": ["power weapon", "torturer's tool"]
                       }
                     ]
                   },
                   {
                     "Max": 1,
-                    "Replaces": ["twin torturer's tools"],
+                    "Replaces": ["torturer's tool"],
                     "Options": [
                       {
                         "Items": ["power weapon"]
@@ -6887,111 +6778,42 @@
                 "InitialWargear": ["twin torturer's tools"],
                 "Options": [
                   {
-                    "Max": 9,
+                    "Max": 1,
+                    "PerXModels": 5,
                     "Replaces": ["twin torturer's tools"],
                     "Options": [
                       {
-                        "Items": ["power weapon"]
+                        "Items": ["hexrifle", "torturer's tool"]
                       }
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 4,
-              "Max": 9
-            },
-            "ModelName": "Wrack with Hexrifle",
-            "StatlineRef": "Wracks",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["torturer's tool", "hexrifle"],
-                "Options": [
+                  },
                   {
-                    "Max": 9,
-                    "Replaces": ["torturer's tool"],
+                    "Max": 1,
+                    "PerXModels": 5,
+                    "Replaces": ["twin torturer's tools"],
                     "Options": [
                       {
-                        "Items": ["power weapon"]
+                        "Items": ["liquifier gun", "torturer's tool"]
                       }
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 4,
-              "Max": 9
-            },
-            "ModelName": "Wrack with Liquifier Gun",
-            "StatlineRef": "Wracks",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["torturer's tool", "liquifier gun"],
-                "Options": [
+                  },
                   {
-                    "Max": 9,
-                    "Replaces": ["torturer's tool"],
+                    "Max": 1,
+                    "PerXModels": 5,
+                    "Replaces": ["twin torturer's tools"],
                     "Options": [
                       {
-                        "Items": ["power weapon"]
+                        "Items": ["ossefactor", "torturer's tool"]
                       }
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 4,
-              "Max": 9
-            },
-            "ModelName": "Wrack with Ossefactor",
-            "StatlineRef": "Wracks",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["torturer's tool", "ossefactor"],
-                "Options": [
+                  },
                   {
-                    "Max": 9,
-                    "Replaces": ["torturer's tool"],
+                    "Max": 1,
+                    "PerXModels": 5,
+                    "Replaces": ["twin torturer's tools"],
                     "Options": [
                       {
-                        "Items": ["power weapon"]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "Limit": {
-              "Min": 4,
-              "Max": 9
-            },
-            "ModelName": "Wrack with Stinger Pistol",
-            "StatlineRef": "Wracks",
-            "Keywords": [],
-            "Wargear": [
-              {
-                "InitialWargear": ["torturer's tool", "stinger pistol"],
-                "Options": [
-                  {
-                    "Max": 9,
-                    "Replaces": ["torturer's tool"],
-                    "Options": [
-                      {
-                        "Items": ["power weapon"]
+                        "Items": ["stinger pistol", "torturer's tool"]
                       }
                     ]
                   }
@@ -7000,13 +6822,7 @@
             ]
           }
         ],
-        "WargearDefinitions": [
-          {
-            "Key": "alternative weapon options",
-            "DisplayName": "Alternative weapon options",
-            "Cost": 0
-          }
-        ]
+        "WargearDefinitions": []
       },
       "UnitAbilities": [
         {
@@ -7313,11 +7129,15 @@
       "Upgrades": [],
       "Points": [
         {
-          "ModelCount": 21,
-          "Cost": 110
+          "ModelCount": 5,
+          "Cost": 55
         },
         {
-          "ModelCount": 46,
+          "ModelCount": 8,
+          "Cost": 90
+        },
+        {
+          "ModelCount": 10,
           "Cost": 110
         }
       ]
